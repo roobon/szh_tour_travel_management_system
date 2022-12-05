@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Dec 05, 2022 at 06:53 AM
+-- Generation Time: Dec 05, 2022 at 07:13 AM
 -- Server version: 8.0.29
 -- PHP Version: 7.4.29
 
@@ -48,7 +48,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `uname`, `email`, `password`, `fname`, `lname`, `contact`, `address`, `file`, `cdate`, `group_id`, `total_amount`, `delete_status`) VALUES
-(2, 'Mayuri', 'mayuri.infospace@gmail.com', 'aa7f019c326413d5b8bcad4314228bcd33ef557f5d81c7cc977f7728156f4357', 'Mayuri', 'K', '+919405716239', 'Pune', '133.jpeg', '2018-04-30', 1, 1000, 0);
+(2, 'Mayuri', 'admin@gmail.com', '79cfeb94595de33b3326c06ab1c7dbda', 'Mayuri', 'K', '+919405716239', 'Pune', '133.jpeg', '2018-04-30', 1, 1000, 0);
 
 -- --------------------------------------------------------
 
