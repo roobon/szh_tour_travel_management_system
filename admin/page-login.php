@@ -52,7 +52,7 @@ try {
 
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         $_SESSION["id"] = $row['id'];
-        $_SESSION["currency"] = $currency['curr_symbol'];
+        //$_SESSION["currency"] = $currency['curr_symbol'];
         $_SESSION["email"] = $row['email'];
         $_SESSION["file"] = $row['file'];
         $_SESSION["password"] = $row['password'];
