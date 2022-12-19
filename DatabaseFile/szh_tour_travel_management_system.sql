@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Dec 05, 2022 at 07:13 AM
+-- Generation Time: Dec 19, 2022 at 07:53 PM
 -- Server version: 8.0.29
 -- PHP Version: 7.4.29
 
@@ -48,7 +48,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `uname`, `email`, `password`, `fname`, `lname`, `contact`, `address`, `file`, `cdate`, `group_id`, `total_amount`, `delete_status`) VALUES
-(2, 'Mayuri', 'admin@gmail.com', '79cfeb94595de33b3326c06ab1c7dbda', 'Mayuri', 'K', '+919405716239', 'Pune', '133.jpeg', '2018-04-30', 1, 1000, 0);
+(2, 'rabbany', 'admin@gmail.com', '79cfeb94595de33b3326c06ab1c7dbda', 'Rabbany', 'Majumdar', '+880152396863', 'Dhaka', '133.jpeg', '2018-04-30', 1, 1000, 0);
 
 -- --------------------------------------------------------
 
@@ -109,6 +109,14 @@ CREATE TABLE `currency` (
   `curr_symbol` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `currency`
+--
+
+INSERT INTO `currency` (`id`, `curr_code`, `curr_symbol`) VALUES
+(1, 'Bangladeshi', 'BDT'),
+(2, 'USD', 'USD');
+
 -- --------------------------------------------------------
 
 --
@@ -140,7 +148,7 @@ CREATE TABLE `email_setup` (
 --
 
 INSERT INTO `email_setup` (`id`, `name`, `mail_driver_host`, `mail_port`, `mail_username`, `mail_password`) VALUES
-(1, 'Mayuri K.', 'mail.gmail.com', 587, 'mayuri.infospace@gmail.com', 'programmers324');
+(1, 'Mayuri K.', 'mail.gmail.com', 587, 'roobon@gmail.com', 'admin123');
 
 -- --------------------------------------------------------
 
@@ -180,6 +188,13 @@ CREATE TABLE `packages` (
   `price_adult` int NOT NULL,
   `price_children` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `packages`
+--
+
+INSERT INTO `packages` (`id`, `pname`, `price_adult`, `price_children`) VALUES
+(1, 'Sylhet Tour', 5000, 3000);
 
 -- --------------------------------------------------------
 
@@ -434,7 +449,7 @@ ALTER TABLE `booking_report`
 -- AUTO_INCREMENT for table `currency`
 --
 ALTER TABLE `currency`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `demo`
@@ -464,7 +479,7 @@ ALTER TABLE `expense_category`
 -- AUTO_INCREMENT for table `packages`
 --
 ALTER TABLE `packages`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `payment`

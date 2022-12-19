@@ -221,7 +221,7 @@ ul.submenu li a.active {
 
 /* banner */
 .banner_w3lspvt {
-    background: url(../images/1.jpg) no-repeat center;
+    background: url(../images/travel-world.jpg) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -262,8 +262,8 @@ ul.submenu li a.active {
     -ms-border-radius: 0px;
     -moz-border-radius: 0px;
     border: 1px solid #fff;
-    font-size: 15px;
-    background: rgba(255, 255, 255, 0.07);
+    font-size: 16px;
+    background: rgba(8, 36, 102, 0.9);
 }
 
 .button-style:hover {
